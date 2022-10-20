@@ -238,7 +238,6 @@ public enum FeatureName {
   CLOUDFORMATION_SKIP_WAIT_FOR_RESOURCES,
   CLOUDFORMATION_CHANGE_SET,
   FAIL_WORKFLOW_IF_SECRET_DECRYPTION_FAILS,
-  ERROR_TRACKING_ENABLED,
   DEPLOY_TO_INLINE_HOSTS,
   HONOR_DELEGATE_SCOPING,
   CG_LICENSE_USAGE,
@@ -463,7 +462,8 @@ public enum FeatureName {
       "This feature flag helps in synchronizing the git clone of repo and copying the files then to destination directory",
       HarnessTeam.CDP),
   ECS_ROLLBACK_MAX_DESIRED_COUNT("Changes ECS Rollback Desired Count to Max(OldService, NewService)", HarnessTeam.CDP),
-  CI_YAML_VERSIONING("Feature flag for yaml simplification", HarnessTeam.CI);
+  CI_YAML_VERSIONING("Feature flag for yaml simplification", HarnessTeam.CI),
+  SRM_ET_EXPERIMENTAL("Feature flag for SRM only Error Tracking development", HarnessTeam.CV);
 
   @Deprecated
   FeatureName() {
